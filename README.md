@@ -1,6 +1,6 @@
 # AniJS
 
-Declarative handling library for CSS animations. The main objective is to provide an elocuent, easy to translate, and quick to develop environment.
+Declarative handling library for CSS animations. The main objective is to provide an eloquent, easy to translate, and quick to develop environment.
 
 
 ## Try It!!
@@ -25,12 +25,13 @@ $ git clone git@github.com:anijs/anijs.git
  
 ## Usage
  
-Put the AniJS file on your page or [use AMD](https://github.com/anijs/anijs/wiki/Using-amd).
+Put the AniJS file on your page or [use AMD](https://github.com/anijs/anijs/wiki/Using-amd). Also it can be loaded from the [CDN](http://www.jsdelivr.com/#!anijs).
+
 ```xml
 <script src="anijs-min.js"></script>
 ```
 
-Include the CSS animation styles definition, we strongly recomend you to use the amazing [animate.css library](http://daneden.github.io/animate.css/) as starting point, this library provides beautiful animations. Also, you can define your own animations.
+Include the CSS animation styles definition, we strongly recommend you to use the amazing [animate.css library](http://daneden.github.io/animate.css/) as starting point, this library provides beautiful animations. Also, you can define your own animations.
 
 ```xml
 <head>
@@ -42,14 +43,14 @@ Include the CSS animation styles definition, we strongly recomend you to use the
 Start playing by adding **anijs-data** tag to any HTML element.
 ```xml
 <body>
-    <header data-anijs="if: click, do: flipInY animated, after: removeAnim">
+    <header data-anijs="if: click, do: flipInY animated">
         header
     </header>
     <nav data-anijs="if: scroll, on: window, do: swing animated, to: footer">
         nav
     </nav>
-    <div id="main" data-anijs="if: DOMContentLoaded, on: document, do: swing animated">
-        if: DOMContentLoaded, on: document, do: swing animated, after: removeAnim
+    <div id="main" data-anijs="if: DOMContentLoaded, on: document, do: swing animated, after: holdAnimClass">
+        if: DOMContentLoaded, on: document, do: swing animated
     </div>
     <footer>
         footer
@@ -71,20 +72,33 @@ If you use [animate.css library](http://daneden.github.io/animate.css/) don't fo
  </body>
 ```
 
+## Advantages
+
+- Easy to use.
+- Compact - around **7.7kb** after gzipping.
+- There is **no need** for **third party** libraries.
+- Speed of development.
+- Better integration between coders and designers.
+
+**“There is one more thing ...”**
+
+Work well in iPad, iPhone, Android and the [modern browsers](http://browsehappy.com/). **;)**
+
+
 ## Documentation
 
 Documentation Topics can be founded in the [Wiki Pages](https://github.com/anijs/anijs/wiki).
 
+## Examples
 
-## Advantages
+[ScrollReveal](http://anijs.github.io/examples/scrollreveal/).
 
-- Easy to use.
-- Reusable code.
-- Speed of development.
-- Better integration between coders and designers.
-- The obtained code is reliable, elgant and expressive.
-- There is no need for third party libraries.
-- Compact - around 6kb after gzipping.
+[RequireJS and Total.js(NodeJs web  framework)](https://github.com/anijs/examples/tree/gh-pages/anijs-requirejs-totaljs) created by [@gallegogt](https://github.com/gallegogt).
+
+[Custom Events Listening.](http://codepen.io/darielnoel/pen/KzsFn?editors=001)
+
+[JQuery Events System.](http://codepen.io/darielnoel/pen/nltiL?editors=001)
+
 
 ## History
  
@@ -103,7 +117,7 @@ AniJS is like a little girl, she needs [hungry and foolish](http://www.youtube.c
 
 ## Aknowledgement
 
-To [Ms. Ana Silvia Tellería](mailto:anisilv@gmail.com), [Ms. Marisniulkis Lescaille](http://www.linkedin.com/pub/marisniulkis-lescaille/59/3a/55), [Mr. Yolier Galán](mailto:gallego@gmail.com), [Mr. René González](mailto:voltusv@gmail.com), [Mr. Julio Cañizares](juliorubcan@gmail.com) and to all the persons that helped with this project.
+To [Ms. Ana Silvia Tellería](mailto:anisilv@gmail.com), [Ms. Marisniulkis Lescaille](http://www.linkedin.com/pub/marisniulkis-lescaille/59/3a/55), [Mr. Yolier Galán](mailto:gallego@gmail.com), [Mr. René González](mailto:voltusv@gmail.com), [Mr. Julio Cañizares](juliorubcan@gmail.com), [Mr. Caridy Patino](https://twitter.com/caridy) and to all the persons that helped with this project.
 
 ## License
  
